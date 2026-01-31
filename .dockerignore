@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+.git
+.gitignore
+node_modules
+.next
+README.md
+*.md
+.env*.local
+.env
+.DS_Store
