@@ -7,6 +7,8 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY . .
+# Ensure public exists for runner stage (Next.js may not create it)
+RUN mkdir -p public
 RUN npm run build
 
 # Production stage
